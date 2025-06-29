@@ -25,7 +25,7 @@ This project goes beyond simple text processing, leveraging cutting-edge AI mode
 ## ⚙️ Architecture & How It Works
 
 The project follows a client-server architecture using WebSockets for real-time, bidirectional communication.
-
+```
 +----------------+       WebSocket       +---------------------+
 |    Frontend    |<--------------------->|       Backend       |
 | (index.html,   |    (Audio Chunks)     |      (Flask)        |
@@ -54,7 +54,7 @@ The project follows a client-server architecture using WebSockets for real-time,
 |                |                       | |   to audio bytes| |
 |                |                       | +-----------------+ |
 +----------------+                       +---------------------+
-
+```
 
 1.  **User Speaks:** The `frontend` captures real-time audio from the user's microphone, breaking it into small, manageable chunks.
 2.  **Stream to Backend:** These audio chunks are continuously streamed over a **WebSocket** connection to the `backend` server.
@@ -190,7 +190,7 @@ Before you begin, ensure you have the following installed on your system:
 ## 📂 Project Structure
 
 To provide a clear overview of the project's organization, here's its directory structure:
-
+```
 conversational-emotion-recognizer/
 ├── backend/
 │   ├── fine_tuned_emotion_model/  # Directory containing your fine-tuned Hugging Face Transformers model files (e.g., config.json, model.safetensors, tokenizer files)
@@ -206,7 +206,7 @@ conversational-emotion-recognizer/
 │   ├── script.js                  # JavaScript code managing frontend logic, microphone access, WebSocket communication, and UI updates
 │   └── style.css                  # CSS stylesheet defining the visual appearance and layout of the user interface
 └── README.md                      # This comprehensive project documentation file
-
+```
 
 ## 💡 Future Enhancements
 
