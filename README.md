@@ -155,7 +155,8 @@ Before you begin, ensure you have the following installed on your system:
     * Your spoken words will appear in a purple chat bubble.
     * The "Emotion:" status at the top of the interface will update to reflect the detected mood.
     * The AI's empathetic response will appear in a dark grey chat bubble, and you will hear it spoken aloud through your computer's speakers.
-6.  You can then click the microphone icon again to continue the conversation!
+6.  You can then click the microphone icon again to continue the conversation! 
+![Alt text](./sample.jpg)
 
 ## 📂 Project Structure
 
