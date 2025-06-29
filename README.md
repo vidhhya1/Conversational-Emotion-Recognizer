@@ -24,37 +24,6 @@ This project goes beyond simple text processing, leveraging cutting-edge AI mode
 
 ## ⚙️ Architecture & How It Works
 
-The project follows a client-server architecture using WebSockets for real-time, bidirectional communication.
-```
-+----------------+       WebSocket       +---------------------+
-|    Frontend    |<--------------------->|       Backend       |
-| (index.html,   |    (Audio Chunks)     |      (Flask)        |
-|  script.js,    |                       |                     |
-|  style.css)    |                       | +-----------------+ |
-| - Records audio|                       | |  STT (Whisper)  | |
-| - Displays chat|                       | | - Transcribes   | |
-| - Plays audio  |                       | |   audio chunks  | |
-|                |                       | +-----------------+ |
-|                |                       |                     |
-|                |                       | +-----------------+ |
-|                |                       | | Emotion Model   | |
-|                |                       | | (Transformers)  | |
-|                |                       | | - Detects mood  | |
-|                |                       | +-----------------+ |
-|                |                       |                     |
-|                |                       | +-----------------+ |
-|                |                       | | Response Gen    | |
-|                |                       | | (Google Gemini) | |
-|                |                       | | - Crafts reply  | |
-|                |                       | +-----------------+ |
-|                |                       |                     |
-|                |                       | +-----------------+ |
-|                |                       | |   TTS (gTTS)    | |
-|                |                       | | - Converts text | |
-|                |                       | |   to audio bytes| |
-|                |                       | +-----------------+ |
-+----------------+                       +---------------------+
-```
 
 1.  **User Speaks:** The `frontend` captures real-time audio from the user's microphone, breaking it into small, manageable chunks.
 2.  **Stream to Backend:** These audio chunks are continuously streamed over a **WebSocket** connection to the `backend` server.
