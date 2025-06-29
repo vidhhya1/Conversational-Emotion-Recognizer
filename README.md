@@ -24,6 +24,7 @@ This project goes beyond simple text processing, leveraging cutting-edge AI mode
 
 ## ⚙️ Architecture & How It Works
 
+![Alt text](./photo.png)
 
 1.  **User Speaks:** The `frontend` captures real-time audio from the user's microphone, breaking it into small, manageable chunks.
 2.  **Stream to Backend:** These audio chunks are continuously streamed over a **WebSocket** connection to the `backend` server.
